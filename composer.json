@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-i18n",
+    "name": "smhg/laminas-i18n",
     "description": "Provide translations for your application, and filter and validate internationalized values",
     "license": "BSD-3-Clause",
     "keywords": [
