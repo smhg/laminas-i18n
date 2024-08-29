@@ -2,7 +2,6 @@
 
 namespace Laminas\I18n\Translator;
 
-use Laminas\Cache;
 use Laminas\Cache\Storage\StorageInterface as CacheStorage;
 use Laminas\EventManager\Event;
 use Laminas\EventManager\EventManager;
@@ -223,7 +222,7 @@ class Translator implements TranslatorInterface
             if ($options['cache'] instanceof CacheStorage) {
                 $translator->setCache($options['cache']);
             } else {
-                $translator->setCache(Cache\StorageFactory::factory($options['cache']));
+                throw new Exception('Invalid cache');
             }
         }
 
